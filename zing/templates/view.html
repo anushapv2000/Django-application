@@ -1,0 +1,34 @@
+{% load static %}
+
+<a href="/category/create">DETAILS</a>
+<table border='1'>
+    <thead class="thead">
+        <tr>
+            <th>SYMBOL</th>
+            <th>NAME OF COMPANY</th>
+            <th>SERIES</th>
+            <th>DATE OF LISTING	</th>
+            <th>PAID UP VALUE	</th>
+            <th> MARKET LOT</th>
+            <th>ISIN NUMBER	</th>
+            <th>FACE VALUE</th>
+
+            
+        </tr>
+    </thead>
+    {% for i in categories %}
+    <tr>
+        <td>{{i.0}}</td>
+        <td>{{i.1}}</td>
+        <td>{{i.2}}</td>
+        <td>{{i.3}}</td>
+        <td>{{i.4}}</td>
+        <td>{{i.5}}</td>
+        <td>{{i.6}}</td>
+        <td>{{i.7}}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+Footer
