@@ -1,0 +1,12 @@
+{% load static %}
+ 
+<a href="/category">Display</a>
+
+<form method="POST" action="/category/delete"  id="myform" enctype="multipart/form-data">
+    {% csrf_token %}
+
+SYMBOL<input type="text" name="symbol" >
+   <br/>
+    <button type="submit" >Obtain data for SYMBOL</button>
+</form>
+</div>
